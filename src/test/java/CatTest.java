@@ -9,15 +9,15 @@ public class CatTest {
 
     Feline feline = new Feline();
     Cat cat = new Cat(feline);
-    List<String> CATFOOD = Arrays.asList("Животные", "Птицы", "Рыба");
+    final static List<String> CATFOOD = Arrays.asList("Животные", "Птицы", "Рыба");
 
     @Test
-    public void getSounds() {
+    public void TestGetSounds() {
         Assert.assertEquals("Мяу", cat.getSound());
     }
 
     @Test
-    public void getFood() throws Exception{
+    public void TestGetFood() throws Exception{
         Assert.assertEquals(CATFOOD, cat.getFood());
     }
 }

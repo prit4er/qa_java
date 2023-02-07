@@ -11,10 +11,10 @@ public class Lion {
 <span class="fc" id="L11">        this.feline = feline;</span>
 <span class="fc bfc" id="L12" title="All 2 branches covered.">        if (&quot;Самец&quot;.equals(sex)) {</span>
 <span class="fc" id="L13">            hasMane = true;</span>
-<span class="pc bpc" id="L14" title="1 of 2 branches missed.">        } else if (&quot;Самка&quot;.equals(sex)) {</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        } else if (&quot;Самка&quot;.equals(sex)) {</span>
 <span class="fc" id="L15">            hasMane = false;</span>
         } else {
-<span class="nc" id="L17">            throw new Exception(&quot;Используйте допустимые значения пола животного - самей или самка&quot;);</span>
+<span class="fc" id="L17">            throw new Exception(&quot;Используйте допустимые значения пола животного - самец или самка&quot;);</span>
         }
 <span class="fc" id="L19">    }</span>
 
@@ -27,7 +27,7 @@ public class Lion {
     }
 
     public List&lt;String&gt; getFood() throws Exception {
-<span class="nc" id="L30">        return feline.getFood(&quot;Хищник&quot;);</span>
+<span class="fc" id="L30">        return feline.getFood(&quot;Хищник&quot;);</span>
     }
 }
 

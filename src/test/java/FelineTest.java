@@ -6,25 +6,25 @@ import java.util.List;
 
 public class FelineTest {
 
-    List<String> FELINEFOOD = Arrays.asList("Животные", "Птицы", "Рыба");
+    final static List<String> FELINEFOOD = Arrays.asList("Животные", "Птицы", "Рыба");
     Feline feline = new Feline();
     @Test
-    public void eatMeat() throws Exception {
+    public void TestEatMeat() throws Exception {
         Assert.assertEquals(FELINEFOOD, feline.eatMeat());
     }
 
     @Test
-    public void getFamily() {
+    public void TestGetFamily() {
         Assert.assertEquals("Кошачьи", feline.getFamily());
     }
 
     @Test
-    public void getKittens() {
+    public void TestgetKittens() {
         Assert.assertEquals(1, feline.getKittens());
     }
 
     @Test
-    public void testGetKittens() {
+    public void TestGetKittens() {
         int kittensCount = feline.getKittens();
         Assert.assertEquals(kittensCount, feline.getKittens());
     }
