@@ -19,7 +19,7 @@ public class LionTest {
     private Feline feline = new Feline();
 
     @Test
-    public void getKittensReturnsValidCount() throws Exception {
+    public void testGetKittensReturnsValidCount() throws Exception {
         Lion lion = new Lion("Самец", feline);
         Mockito.when(feline.getKittens()).thenReturn(1);
         int expectedResult = 1;
@@ -27,7 +27,7 @@ public class LionTest {
     }
 
     @Test
-    public void getFoodReturnsValidList() throws Exception {
+    public void testGetFoodReturnsValidList() throws Exception {
         Lion lion = new Lion("Самец", feline);
         Mockito.when(feline.getFood("Хищник")).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
         List<String> expectedResult = Arrays.asList("Животные", "Птицы", "Рыба");
@@ -35,7 +35,7 @@ public class LionTest {
     }
 
     @Test
-    public void constructorThrowsExceptionOnUnsupportedSex() {
+    public void testConstructorThrowsExceptionOnUnsupportedSex() {
         Exception exception = Assert.assertThrows(Exception.class, () -> {
             Lion lion = new Lion("Ошибочный", feline);
         });

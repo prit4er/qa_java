@@ -9,22 +9,22 @@ public class FelineTest {
     final static List<String> FELINEFOOD = Arrays.asList("Животные", "Птицы", "Рыба");
     Feline feline = new Feline();
     @Test
-    public void TestEatMeat() throws Exception {
+    public void testEatMeat() throws Exception {
         Assert.assertEquals(FELINEFOOD, feline.eatMeat());
     }
 
     @Test
-    public void TestGetFamily() {
+    public void testGetFamily() {
         Assert.assertEquals("Кошачьи", feline.getFamily());
     }
 
     @Test
-    public void TestgetKittens() {
+    public void testGetKittensOne() {
         Assert.assertEquals(1, feline.getKittens());
     }
 
     @Test
-    public void TestGetKittens() {
+    public void testGetKittensTwo() {
         int kittensCount = feline.getKittens();
         Assert.assertEquals(kittensCount, feline.getKittens());
     }

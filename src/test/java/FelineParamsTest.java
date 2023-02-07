@@ -23,7 +23,7 @@ public class FelineParamsTest {
     }
 
     @Test
-    public void getKittensWithArgumentsReturnsValidCount() {
+    public void testGetKittensWithArgumentsReturnsValidCount() {
         Feline feline = new Feline();
         assertEquals("getKitten вернет количество котят", expectedCount, feline.getKittens(kittensCount));
     }

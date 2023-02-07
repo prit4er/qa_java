@@ -12,12 +12,12 @@ public class CatTest {
     final static List<String> CATFOOD = Arrays.asList("Животные", "Птицы", "Рыба");
 
     @Test
-    public void TestGetSounds() {
+    public void testGetSounds() {
         Assert.assertEquals("Мяу", cat.getSound());
     }
 
     @Test
-    public void TestGetFood() throws Exception{
+    public void testGetFood() throws Exception{
         Assert.assertEquals(CATFOOD, cat.getFood());
     }
 }
